@@ -11,22 +11,22 @@ NON USARE SPLIT E REVERSE!!! TUTTO CON CICLO FOR */
  RETURN
  - boolean
 */
-const userWord = prompt("Inserisci la tua parola", "anna");
-const wordPalindroma = isWordPalindroma(userWord);
-console.log(wordPalindroma);
+// const userWord = prompt("Inserisci la tua parola", "anna");
+// const wordPalindroma = isWordPalindroma(userWord);
+// console.log(wordPalindroma);
 
-//FUNZIONE
-function isWordPalindroma(userWord) {
-    let isWordPalindroma = false;
-    for( let i = 0; i < (userWord.length -1 ) / 2; i++) {
-        let curLetter = userWord[i];
-        console.log(curLetter, userWord[userWord.length -1 -i])
-        if (curLetter === userWord[userWord.length -1 -i]){
-            isWordPalindroma = true;
-        }
-    }
-    return isWordPalindroma;
-}
+// //FUNZIONE
+// function isWordPalindroma(userWord) {
+//     let isWordPalindroma = false;
+//     for( let i = 0; i < (userWord.length -1 ) / 2; i++) {
+//         let curLetter = userWord[i];
+//         console.log(curLetter, userWord[userWord.length -1 -i])
+//         if (curLetter === userWord[userWord.length -1 -i]){
+//             isWordPalindroma = true;
+//         }
+//     }
+//     return isWordPalindroma;
+// }
 
 
 
@@ -37,5 +37,18 @@ Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzion
 Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
+const evenOdd = prompt("Scegli: pari o dispari?", "pari");
+let type = "pari";
+if (evenOdd !== "pari") {
+    type = "dispari"
+
+} console.log(type);
+const userNumber = prompt("scegli un numero da 1 a 5", "es. 3")
+let number = 0; 
+if (userNumber > 0 && userNumber <= 5){
+    number = userNumber;
+} else{
+    console.log("Il numero inserito non è valido");
+} console.log(number);
 
 
