@@ -42,13 +42,23 @@ let type = "pari";
 if (evenOdd !== "pari") {
     type = "dispari"
 
-} console.log(type);
-const userNumber = prompt("scegli un numero da 1 a 5", "es. 3")
+} console.log("Hai scelto:" + type);
+const userNumber = parseInt(prompt("scegli un numero da 1 a 5", "es. 3"))
 let number = 0; 
 if (userNumber > 0 && userNumber <= 5){
     number = userNumber;
 } else{
     console.log("Il numero inserito non è valido");
-} console.log(number);
+} console.log("Il numero che hai scelto è:" + number);
 
 
+// FUNZIONE PER NUMERO RANDOM
+const computerNumber = randomNumber();
+console.log(computerNumber);
+function randomNumber() {
+    const randomNum = Math.floor(Math.random() * 6);
+    return randomNum;
+  }
+
+  let numberSum = computerNumber + userNumber
+  console.log(numberSum);
