@@ -67,6 +67,11 @@ function randomNumber() {
     let sum = computerNumber + userNumber;
     console.log(sum);
     let sumType;
+    if(sumType !== type) {
+      console.log("questa volta hai perso, ritenta :(")
+    } else {
+      console.log("hai vinto!")
+    }
     if(sum % 2 === 0){
       sumType = "pari";
     } else{
@@ -74,5 +79,5 @@ function randomNumber() {
     }
     return sum, sumType;
     
-  }    
+  }   
   
