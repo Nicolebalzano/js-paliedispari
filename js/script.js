@@ -54,11 +54,25 @@ if (userNumber > 0 && userNumber <= 5){
 
 // FUNZIONE PER NUMERO RANDOM
 const computerNumber = randomNumber();
-console.log(computerNumber);
+console.log("Il numero casuale generato è:" + computerNumber);
 function randomNumber() {
     const randomNum = Math.floor(Math.random() * 6);
     return randomNum;
   }
+// VARIABILE CON LA SOMMA DEI NUMERI
+ numberSum = result();
+  console.log("La somma dei numeri è:" + numberSum);
 
-  let numberSum = computerNumber + userNumber
-  console.log(numberSum);
+  function result() {
+    let sum = computerNumber + userNumber;
+    console.log(sum);
+    let sumType;
+    if(sum % 2 === 0){
+      sumType = "pari";
+    } else{
+      sumType = "dispari";
+    }
+    return sum, sumType;
+    
+  }    
+  
